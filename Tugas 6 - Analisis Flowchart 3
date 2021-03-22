@@ -1,0 +1,132 @@
+#include <iostream>
+#include <stdlib.h>
+#include <conio.h>
+using namespace std;
+
+int main()
+{
+    string pass="a2";
+    string input;
+    string user="a1";
+    string input2;
+    int prog,pjg,lbr,luas1,luas2,als,tgi;
+    int b;
+    char a,i;
+    do
+    {
+        cout<<endl;
+      cout<<"                                                                                                         >> usr  : ";
+      cin>>input2;
+      cout<<endl;
+      cout<<"                                                                                                         >> pass : ";
+    cin>>input;
+    cout<<endl;
+          {
+        if(input2==user&&input==pass)
+
+              {
+
+
+                      cout<<"\n\n";
+                      cout<<"                                                                                                     >> Program choise : ";
+                      cin>>prog;
+
+                      switch (prog)
+                     {
+                      case 1:
+                        cout<<endl;
+                        cout<<"                                                                               ---------------------------------------------------------------------"<<endl;
+                        cout<<"                                                                                       >> Masukkan Panjang : ";
+                        cin>>pjg;
+                        cout<<endl;
+                        cout<<"                                                                                       >> Masukkan Lebar   : ";
+                        cin>>lbr;
+                        cout<<endl;
+                        luas1=pjg*lbr;
+                        cout<<endl;
+                        cout<<"                                                                                         >> Luas persegi panjang    : "<<luas1<<endl;
+                        cout<<endl;
+                        cout<<"                                                                                         >> Input data lagi (Y/T) ? : ";
+                        cin>>a;
+                        cout<<endl;
+
+
+                        break;
+
+                      case 2:
+                        cout<<endl;
+                        cout<<"                                                                              ---------------------------------------------------------------------"<<endl;
+                        cout<<"                                                                                         >> Masukkan Alas   : ";
+                        cin>>als;
+                        cout<<endl;
+                        cout<<"                                                                                        >> Masukkan Tinggi : ";
+                        cin>>tgi;
+                        cout<<endl;
+                        luas2=0.5*als*tgi;
+                        cout<<"                                                                                           >> Luas segitiga   : "<<luas2<<endl;
+                        cout<<endl;
+                        cout<<"                                                                                           >> Input data lagi (Y/T) ? : ";
+                        cin>>a;
+                        cout<<endl;
+
+
+                        break;
+
+                      default:
+                        cout<<endl;
+                        cout<<"                                                                              ---------------------------------------------------------------------"<<endl;
+                        cout<<"                                                                                         !!! Prog not found !!!"<<endl;
+                        cout<<endl;
+                        cout<<"                                                                                         >> Input data lagi (Y/T) ? : ";
+                        cin>>a;
+                        cout<<endl;
+
+
+                        }
+                        if(a=='t'||a=='T')
+                        {
+                            cout<<"                                                                                      >> Please Enter To Close..."<<endl;
+                        }
+
+
+
+
+
+                  }
+
+    else if(input2 !=user&&input==pass)
+    {
+
+        cout<<"\n";
+        cout<<"                                                                                                  !!! Sorry username incorect !!!"<<endl;
+        cout<<endl;
+    cout<<"                                                                                                  >> Input pass lagi (Y/T) ? : ";
+        cin>>a;
+
+    }
+
+    else if(input2==user&&input !=pass)
+    {
+
+        cout<<"\n";
+        cout<<"                                                                                                  !!! Sorry password incorect !!!"<<endl;
+        cout<<endl;
+    cout<<"                                                                                                  >> Input pass lagi (Y/T) ? : ";
+        cin>>a;
+    }
+    else if(input2 !=user&&input !=pass)
+    {
+
+        cout<<"\n";
+        cout<<"                                                                                                 !!! Sorry username and password incorect !!!"<<endl;
+        cout<<endl;
+    cout<<"                                                                                                 >> Input pass lagi (Y/T) ? : ";
+        cin>>a;
+    }
+    }
+    }
+    while(a=='y'||a=='Y');
+    cout<<endl;
+    cout<<endl;
+    getch();
+}
