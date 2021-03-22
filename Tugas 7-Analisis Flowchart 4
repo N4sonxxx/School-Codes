@@ -1,0 +1,94 @@
+#include <iostream>
+#include <stdlib.h>
+#include <conio.h>
+using namespace std;
+
+int main()
+
+{
+    int menu,panjang,lebar,luaspp,alas,tinggi,luassgtg,hari;
+    cout<<">> Menu : ";
+    cin>>menu;
+    cout<<endl;
+
+
+    if(menu==1)
+           {
+               cout<<endl;
+                cout<<">> Panjang : ";
+                cin>>panjang;
+                cout<<">> Lebar   : ";
+                cin>>lebar;
+                cout<<endl;
+                luaspp=panjang*lebar;
+                cout<<">> Luas Persegi Panjang = "<<luaspp<<endl;
+             }
+    else if(menu==2)
+           {
+               cout<<endl;
+                cout<<">> Alas   : ";
+                cin>>alas;
+                cout<<">> Tinggi : ";
+                cin>>tinggi;
+                cout<<endl;
+                luassgtg=0.5*alas*tinggi;
+                cout<<">> Luas Segitiga = "<<luassgtg<<endl;
+             }
+    else if(menu==3)
+                {
+                    cout<<endl;
+                     cout<<">> Angka : ";
+                cin>>hari;
+                cout<<endl;
+
+                switch (hari)
+                {
+              case 1:
+                cout<<">> Senin <<";
+                cout<<endl;
+                break;
+
+              case 2:
+                cout<<">> Selasa <<";
+                cout<<endl;
+                break;
+
+             case 3:
+                cout<<">> Rabu <<";
+                cout<<endl;
+                break;
+
+              case 4:
+                cout<<">> Kamis <<";
+                cout<<endl;
+                break;
+
+             case 5:
+                cout<<">> Jumat <<";
+                cout<<endl;
+                break;
+
+              case 6:
+                cout<<">> Sabtu <<";
+                cout<<endl;
+                break;
+
+             case 7:
+                cout<<">> Minggu <<";
+                cout<<endl;
+                break;
+
+             default:
+                cout<<"!!!...File not found...!!!";
+                cout<<endl;
+
+
+                }
+
+                }
+else
+    cout<<"!!! Pilihan tidak tersedia !!!";
+    cout<<endl;
+
+    getch();
+}
