@@ -1,0 +1,31 @@
+package com.company;
+
+public class Main {
+
+public static void main(String[] args)
+{
+
+int angka1 = 500, angka2 = 640, angka3 = 167;
+if(angka1 >= angka2)
+{
+
+if(angka1 >= angka3)
+   System.out.println("Variabel Dengan Bilangan Terbesar Adalah : "+angka1);
+else
+   System.out.println("Variabel Dengan Bilangan Terbesar Adalah : "+angka3);
+
+}
+else
+{
+
+if(angka2 >= angka3)
+   System.out.println("Variabel Dengan Bilangan Terbesar Adalah : "+angka2);
+   
+ else
+    System.out.println("Variabel Dengan Bilangan Terbesar Adalah : "+angka3);
+
+}
+}
+
+
+}
