@@ -1,0 +1,17 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args)
+    {
+        int nilai = 95;
+
+        if (nilai > 80)
+        {
+            System.out.println("LULUS");
+        }
+        else {
+            System.out.println("REMEDIAL");
+        }
+    }
+}
