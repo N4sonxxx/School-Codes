@@ -25,3 +25,5 @@ VALUES ('Vacum', 1, 'Kebersihan', 'Besar', 1234567890 );
 SELECT * FROM Karyawan
 SELECT * FROM Barang
 
+
+ALTER TABLE kependudukan ADD NIP VARCHAR (7)
