@@ -1,0 +1,25 @@
+CREATE DATABASE Latihan
+
+CREATE TABLE kependudukan (NmLengkap VARCHAR (20), NmPanggilan VARCHAR (20), TmpLahir VARCHAR (10), ThnLahir VARCHAR (10), Asal VARCHAR (20), Pekerjaan VARCHAR (20), JnsKel VARCHAR (10), NIP (7)) ; 
+
+USE Latihan
+
+SELECT * FROM kependudukan
+
+INSERT INTO kependudukan (NmLengkap,NmPanggilan,TmpLahir,ThnLahir,Asal,Pekerjaan,JnsKel,NIP)
+VALUES ('Amelia Putri', 'Amel', 'Badung', 2001, 'Badung', 'Pegawai Swasta', 'Perempuan', 5104334);
+
+SELECT NmLengkap, NmPanggilan, Asal
+FROM kependudukan;
+
+SELECT NmPanggilan, TmpLahir, Pekerjaan
+FROM kependudukan
+WHERE NOT Pekerjaan='PNS';
+
+SELECT Nip, NmPanggilan, JnsKel
+FROM kependudukan
+WHERE JnsKel='Laki-Laki';
+
+SELECT NmPanggilan, TmpLahir, Asal, Pekerjaan
+FROM kependudukan
+WHERE NmPanggilan LIKE 'a%';
