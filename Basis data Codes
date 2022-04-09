@@ -27,3 +27,8 @@ SELECT * FROM Barang
 
 
 ALTER TABLE kependudukan ADD NIP VARCHAR (7)
+
+
+UPDATE Perpustakaan
+SET Jumlah_pengunjung = "20 orang"
+WHERE Id_admin = "4011";
