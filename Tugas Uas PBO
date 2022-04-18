@@ -1,0 +1,176 @@
+package com.company;
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args)
+    {
+
+        int a;
+        int j=1850;
+        int p=809;
+        String jurusan;
+        String nama;
+        String kelas;
+        String absen;
+        double tugas1;
+        double tugas2;
+        double tugas3;
+        double tugas4;
+        double ulangan1;
+        double ulangan2;
+        double uas;
+        double raport;
+        double tugasrtrt;
+        double tugaspersen1;
+        double tugaspersen2;
+        double ulanganrtrt;
+        double ulanganpersen;
+        double tugasjumlah;
+        double ulanganjumlah;
+        double uaspersen;
+        double grade;
+
+
+        Scanner scan = new Scanner (System.in);
+        Scanner input = new Scanner (System.in);
+
+
+            System.out.println("=============================================");
+            System.out.println("PROGRAM MENGHITUNG NILAI AKHIR/RAPORT  SISWA ");
+            System.out.println("=============================================");
+            System.out.print("Nama Siswa : ");
+            nama = input.nextLine();
+            System.out.print("Kelas : ");
+            kelas = input.nextLine();
+            System.out.print("No.Absen : ");
+            absen = input.nextLine();
+            System.out.print("Nilai Tugas 1 : ");
+            tugas1 = input.nextDouble();
+        System.out.print("Nilai Tugas 2 : ");
+        tugas2 = input.nextDouble();
+        System.out.print("Nilai Tugas 3 : ");
+        tugas3 = input.nextDouble();
+        System.out.print("Nilai Tugas 4 : ");
+        tugas4 = input.nextDouble();
+        System.out.print("Nilai Ulangan Harian 1 : ");
+        ulangan1 = input.nextDouble();
+        System.out.print("Nilai Ulangan Harian 2 : ");
+        ulangan2 = input.nextDouble();
+        System.out.print("Nilai UAS : ");
+        uas = input.nextInt();
+
+        tugasjumlah = tugas1 + tugas2 + tugas3 +tugas4 ;
+        tugasrtrt = tugasjumlah / 4 ;
+        tugaspersen1 = tugasrtrt / 100;
+        tugaspersen2 = tugaspersen1 * 40;
+
+
+        ulanganjumlah = ulangan1 + ulangan2;
+        ulanganrtrt = ulanganjumlah / 2;
+        ulanganpersen = ulanganrtrt / 100 * 30;
+
+        uaspersen = uas / 100 * 30;
+
+        grade = tugaspersen2 + ulanganpersen + uaspersen;
+
+                                            if (grade>100){
+
+                                                System.out.println("\n");
+                                                System.out.println("Nilai Tidak Terdifinisi !");
+
+                                            }
+
+                                            else if (grade>=85) {
+                                                System.out.println("\n");
+
+                                                System.out.println("=============================================");
+                                                System.out.println("SELAMAT ! " + nama + " Anda naik ke Kelas XII");
+                                                System.out.println("=============================================");
+                                                System.out.println("Nama Anda           : " + nama);
+                                                System.out.println("Kelas               : " + kelas);
+                                                System.out.println("Absen               : " + absen);
+                                                System.out.println("Nilai Raport        : " + grade);
+                                                System.out.println("Grade               : A ");
+                                                                    }
+
+                                            else if (grade >=75) {
+                                                System.out.println("\n");
+
+                                                System.out.println("=============================================");
+                                                System.out.println("SELAMAT ! " + nama + " Anda naik ke Kelas XII");
+                                                System.out.println("=============================================");
+                                                System.out.println("Nama Anda           : " + nama);
+                                                System.out.println("Kelas               : " + kelas);
+                                                System.out.println("Absen               : " + absen);
+                                                System.out.println("Nilai Raport        : " + grade);
+                                                System.out.println("Grade               : B ");
+                                            }
+
+                                            else if (grade >=60) {
+                                                System.out.println("\n");
+
+                                                System.out.println("=============================================");
+                                                System.out.println("Maaf " + nama + " Anda Harus melakukan Remidial");
+                                                System.out.println("=============================================");
+                                                System.out.println("Nama Anda           : " + nama);
+                                                System.out.println("Kelas               : " + kelas);
+                                                System.out.println("Absen               : " + absen);
+                                                System.out.println("Nilai Raport        : " + grade);
+                                                System.out.println("Grade               : C ");
+                                            }
+
+                                            else if (grade >=40) {
+                                                System.out.println("\n");
+
+                                                System.out.println("=============================================");
+                                                System.out.println("Maaf " + nama + " Anda Harus melakukan Remidial");
+                                                System.out.println("=============================================");
+                                                System.out.println("Nama Anda           : " + nama);
+                                                System.out.println("Kelas               : " + kelas);
+                                                System.out.println("Absen               : " + absen);
+                                                System.out.println("Nilai Raport        : " + grade);
+                                                System.out.println("Grade               : D ");
+                                            }
+
+                                            else if (grade <40) {
+                                                System.out.println("\n");
+
+                                                System.out.println("=============================================");
+                                                System.out.println("Maaf " + nama + " Anda Harus melakukan Remidial");
+                                                System.out.println("=============================================");
+                                                System.out.println("Nama Anda           : " + nama);
+                                                System.out.println("Kelas               : " + kelas);
+                                                System.out.println("Absen               : " + absen);
+                                                System.out.println("Nilai Raport        : " + grade);
+                                                System.out.println("Grade               : E ");
+                                            }
+
+                                            else if (grade >= 0) {
+                                                System.out.println("\n");
+
+                                                System.out.println("=============================================");
+                                                System.out.println("Maaf " + nama + " Anda Harus melakukan Remidial");
+                                                System.out.println("=============================================");
+                                                System.out.println("Nama Anda           : " + nama);
+                                                System.out.println("Kelas               : " + kelas);
+                                                System.out.println("Absen               : " + absen);
+                                                System.out.println("Nilai Raport        : " + grade);
+                                                System.out.println("Grade               : E ");
+                                            }
+
+
+                                            else {
+
+                                                System.out.println("\n");
+                                                System.out.println("Nilai Tidak Terdifinisi !");
+
+                                            }
+
+
+
+
+
+
+    }
+        }
+
