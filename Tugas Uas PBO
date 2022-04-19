@@ -21,8 +21,6 @@ public class Main {
         double uaspersen;
         double grade;
 
-
-        Scanner scan = new Scanner (System.in);
         Scanner input = new Scanner (System.in);
 
 
