@@ -73,14 +73,7 @@ public class Main {
 
         grade = tugaspersen2 + ulanganpersen + uaspersen;
 
-                                            if (grade>100){
-
-                                                System.out.println("\n");
-                                                System.out.println("Nilai Tidak Terdifinisi !");
-
-                                            }
-
-                                            else if (grade>=85) {
+                                            if (grade<=100 && grade >85){
                                                 System.out.println("\n");
 
                                                 System.out.println("=============================================");
@@ -91,9 +84,10 @@ public class Main {
                                                 System.out.println("Absen               : " + absen);
                                                 System.out.println("Nilai Raport        : " + grade);
                                                 System.out.println("Grade               : A ");
-                                                                    }
 
-                                            else if (grade >=75) {
+                                            }
+
+                                            else if (grade<=84 && grade>75) {
                                                 System.out.println("\n");
 
                                                 System.out.println("=============================================");
@@ -104,13 +98,13 @@ public class Main {
                                                 System.out.println("Absen               : " + absen);
                                                 System.out.println("Nilai Raport        : " + grade);
                                                 System.out.println("Grade               : B ");
-                                            }
+                                                                    }
 
-                                            else if (grade >=60) {
+                                            else if (grade <=74 && grade>60) {
                                                 System.out.println("\n");
 
                                                 System.out.println("=============================================");
-                                                System.out.println("Maaf " + nama + " Anda Harus melakukan Remidial");
+                                                System.out.println("SELAMAT ! " + nama + " Anda naik ke Kelas XII");
                                                 System.out.println("=============================================");
                                                 System.out.println("Nama Anda           : " + nama);
                                                 System.out.println("Kelas               : " + kelas);
@@ -119,7 +113,7 @@ public class Main {
                                                 System.out.println("Grade               : C ");
                                             }
 
-                                            else if (grade >=40) {
+                                            else if (grade <=59 && grade>40) {
                                                 System.out.println("\n");
 
                                                 System.out.println("=============================================");
@@ -132,7 +126,7 @@ public class Main {
                                                 System.out.println("Grade               : D ");
                                             }
 
-                                            else if (grade <40) {
+                                            else if (grade>=0 && grade<39 ) {
                                                 System.out.println("\n");
 
                                                 System.out.println("=============================================");
@@ -144,20 +138,6 @@ public class Main {
                                                 System.out.println("Nilai Raport        : " + grade);
                                                 System.out.println("Grade               : E ");
                                             }
-
-                                            else if (grade >= 0) {
-                                                System.out.println("\n");
-
-                                                System.out.println("=============================================");
-                                                System.out.println("Maaf " + nama + " Anda Harus melakukan Remidial");
-                                                System.out.println("=============================================");
-                                                System.out.println("Nama Anda           : " + nama);
-                                                System.out.println("Kelas               : " + kelas);
-                                                System.out.println("Absen               : " + absen);
-                                                System.out.println("Nilai Raport        : " + grade);
-                                                System.out.println("Grade               : E ");
-                                            }
-
 
                                             else {
 
