@@ -4,11 +4,6 @@ public class Main {
 
     public static void main(String[] args)
     {
-
-        int a;
-        int j=1850;
-        int p=809;
-        String jurusan;
         String nama;
         String kelas;
         String absen;
@@ -19,12 +14,8 @@ public class Main {
         double ulangan1;
         double ulangan2;
         double uas;
-        double raport;
         double tugasrtrt;
-        double tugaspersen1;
-        double tugaspersen2;
         double ulanganrtrt;
-        double ulanganpersen;
         double tugasjumlah;
         double ulanganjumlah;
         double uaspersen;
@@ -59,19 +50,16 @@ public class Main {
         System.out.print("Nilai UAS : ");
         uas = input.nextInt();
 
-        tugasjumlah = tugas1 + tugas2 + tugas3 +tugas4 ;
-        tugasrtrt = tugasjumlah / 4 ;
-        tugaspersen1 = tugasrtrt / 100;
-        tugaspersen2 = tugaspersen1 * 40;
+        tugasjumlah = (tugas1 + tugas2 + tugas3 +tugas4) / 4 ;
+        tugasrtrt = (tugasjumlah /100) * 40 ;
 
 
-        ulanganjumlah = ulangan1 + ulangan2;
-        ulanganrtrt = ulanganjumlah / 2;
-        ulanganpersen = ulanganrtrt / 100 * 30;
+        ulanganjumlah = (ulangan1 + ulangan2) / 2;
+        ulanganrtrt = (ulanganjumlah / 100) * 30;
 
         uaspersen = uas / 100 * 30;
 
-        grade = tugaspersen2 + ulanganpersen + uaspersen;
+        grade = tugasrtrt + ulanganrtrt + uaspersen;
 
                                             if (grade<=100 && grade >85){
                                                 System.out.println("\n");
