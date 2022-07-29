@@ -33,6 +33,10 @@ UPDATE Perpustakaan
 SET Jumlah_pengunjung = "20 orang"
 WHERE Id_admin = "4011";
 
-
+------- inner join 2 table- --------
 SELECT namaobat, perusahaan FROM tb_obat INNER JOIN tb_supplier USING (idsupplier);
+
+
+--------- inner join 3 table ----------
+SELECT tgltransaksi, idtransaksi, namalengkap, totalbayar, bayar, kembali FROM tb_detail_transaksi INNER JOIN tb_transaksi USING (idtransaksi) INNER JOIN tb_pelanggan using (idpelanggan);
 
